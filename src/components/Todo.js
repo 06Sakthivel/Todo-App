@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useEffect } from "react";
 import { TodoForm } from "./TodoForm";
 import { BsFillTrashFill } from "react-icons/bs";
 import { FaRegEdit } from "react-icons/fa";

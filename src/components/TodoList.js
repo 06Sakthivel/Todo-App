@@ -56,6 +56,7 @@ const TodoList = () => {
         updateTodo={updateTodo}
         completeTodo={completeTodo}
       />
+      {todos.length > 0 && <span>Click on the todo to mark as completed</span>}
     </div>
   );
 };

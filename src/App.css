@@ -15,6 +15,15 @@ h1 {
   text-transform: uppercase;
 }
 
+span {
+  opacity: 0.3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 10px auto;
+  width: 100%;
+}
+
 .todo-app {
   display: flex;
   margin: 5vh auto;
@@ -23,8 +32,9 @@ h1 {
   background-color: rgb(34, 34, 34);
   min-height: 600px;
   border-radius: 10px;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.5rem 2rem;
   text-align: center;
+  position: relative;
 }
 
 .todo-app > div {
@@ -89,6 +99,7 @@ h1 {
   background: linear-gradient(to right, #000046, #1cb5e0);
   padding: 1rem 2rem;
   border-radius: 4px;
+  transition: transform 0.3s ease;
 }
 
 .todo-item.complete {
@@ -115,9 +126,14 @@ h1 {
   font-size: 16px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
   h1 {
     font-size: 1rem;
+  }
+
+  .todo-app {
+    margin: 0;
+    border-radius: 0;
   }
 
   .todo-input {
